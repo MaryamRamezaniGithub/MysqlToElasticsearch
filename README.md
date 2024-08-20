@@ -52,3 +52,7 @@ This project sets up a comprehensive environment for orchestrating and monitorin
   #### Step 4: Monitor Service Initialization
  Pay attention to the initialization tasks performed by the `airflow-init` container.
    - The `airflow-init` container initializes Airflow and performs necessary setup tasks. After completing its initialization, this container will stop automatically.
+
+ #### Step 5: Install DBeaver locally
+ ou should install DBeaver database tool from [**HERE**](https://dbeaver.io/download/) and connect Mariadb in container with the following credentials: db: Mariadb, Database: test, username: root, password: admin( make sure that docker container is still running). We careate the following demo table in DBeaver GUI:
+ ![1](https://github.com/user-attachments/assets/53e80a5c-ef1b-4984-a229-5d18d031a31e)
