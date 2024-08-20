@@ -15,7 +15,7 @@ This project sets up a comprehensive environment for orchestrating and monitorin
 - PostgreSQL: Serves as the backend database for Airflow, storing metadata and task logs. It is configured with default credentials (airflow/airflow) and runs on port 5432.
 - Redis: Acts as the message broker for Celery, facilitating communication between the scheduler and workers, and runs on port 6379
 
-  **2- Elasticsearch & Kibana **
+  ** 2- Elasticsearch & Kibana **
    is a powerful open-source search and analytics engine designed for fast and scalable full-text search and Kibana is designed to work seamlessly with Elasticsearch, allowing users to visualize, search, and analyze data stored in Elasticsearch indices. By creating and customize dashboards in Kibana to display multiple visualizations on a single screen. In this project,  Elasticsearch runs on port 9200, and Kibana on port 5601.
 
 
@@ -73,9 +73,13 @@ If you navigate in 'plugin/hooks' and 'plugin/operators' directory you can see a
   ![2](https://github.com/user-attachments/assets/447f09a6-11c1-45b8-b7f3-0f09c398cdea)
 
 the method (__init__) accepts a connection ID (elasticsearch_conn_id) that defaults to 'elasticsearch_default'. This ID is used to retrieve connection details from Airflow's connection management system. So in your Airflow webserver, you should go to 'admin/connection'
+
+![7](https://github.com/user-attachments/assets/d703e23e-0e44-4e57-8539-216bb5d31cd5)
   
 - 'plugin/operators': This code defines a custom Airflow operator named MySqlToElasticsearchTransfer, which is designed to transfer data from a MySQL database to an Elasticsearch index. This operator extends Airflow's BaseOperator class, allowing it to be used as a task within an Airflow Directed Acyclic Graph (DAG).
 
   ![3](https://github.com/user-attachments/assets/e9411683-baab-4d49-993e-8444793e8617)
 
- 
+the mysql_conn_id is set to "mysql_default", we should retrive  Airflow connection ID for the Mariadb database as the following
+
+ ![6](https://github.com/user-attachments/assets/2ad6c3c5-7e23-454a-9244-314a64b32421)
