@@ -53,8 +53,15 @@ This project sets up a comprehensive environment for orchestrating and monitorin
  Pay attention to the initialization tasks performed by the `airflow-init` container.
    - The `airflow-init` container initializes Airflow and performs necessary setup tasks. After completing its initialization, this container will stop automatically.
 
+ ![4](https://github.com/user-attachments/assets/384f619d-47af-433a-98d4-cae03cb161b5)
+
  #### Step 5: Install DBeaver locally
- ou should install DBeaver database tool from [**HERE**](https://dbeaver.io/download/) and connect Mariadb in container with the following credentials: db: Mariadb, Database: test, username: root, password: admin( make sure that docker container is still running). We careate the following demo table in DBeaver GUI:
+ ou should install DBeaver database tool from [**HERE**](https://dbeaver.io/download/) and connect Mariadb in container with the following credentials: host: localhost, Database: test, username: root, password:
+admin( make sure that docker container is still running)
+
+ ![5](https://github.com/user-attachments/assets/203e06bb-f69e-42ed-9008-dd9ec5add119)
+
+ We careate the following demo table in DBeaver GUI:
  
  ![1](https://github.com/user-attachments/assets/53e80a5c-ef1b-4984-a229-5d18d031a31e)
 
@@ -64,6 +71,8 @@ If you navigate in 'plugin/hooks' and 'plugin/operators' directory you can see a
 - 'plugin/hooks' : This Python code defines a custom hook class, ElasticsearchHook, which is used to interact with an Elasticsearch cluster within the Apache Airflow framework. Hooks in Airflow are abstractions for connecting to external systems, allowing tasks to interact with mariadb.
 
   ![2](https://github.com/user-attachments/assets/447f09a6-11c1-45b8-b7f3-0f09c398cdea)
+
+the method (__init__) accepts a connection ID (elasticsearch_conn_id) that defaults to 'elasticsearch_default'. This ID is used to retrieve connection details from Airflow's connection management system. So in your Airflow webserver, you should go to 'admin/connection'
   
 - 'plugin/operators': This code defines a custom Airflow operator named MySqlToElasticsearchTransfer, which is designed to transfer data from a MySQL database to an Elasticsearch index. This operator extends Airflow's BaseOperator class, allowing it to be used as a task within an Airflow Directed Acyclic Graph (DAG).
 
