@@ -62,7 +62,11 @@ This project sets up a comprehensive environment for orchestrating and monitorin
 If you navigate in 'plugin/hooks' and 'plugin/operators' directory you can see all code requiered for making connection between Mariadb and Elasticsearch. I Wrote 
 
 - 'plugin/hooks' : This Python code defines a custom hook class, ElasticsearchHook, which is used to interact with an Elasticsearch cluster within the Apache Airflow framework. Hooks in Airflow are abstractions for connecting to external systems, allowing tasks to interact with mariadb.
+
+  ![2](https://github.com/user-attachments/assets/447f09a6-11c1-45b8-b7f3-0f09c398cdea)
   
-- 'plugin/operators': This code defines a custom Airflow operator named MySqlToElasticsearchTransfer, which is designed to transfer data from a MySQL database to an Elasticsearch index. This operator extends Airflow's BaseOperator class, allowing it to be used as a task within an Airflow Directed Acyclic Graph (DAG). 
+- 'plugin/operators': This code defines a custom Airflow operator named MySqlToElasticsearchTransfer, which is designed to transfer data from a MySQL database to an Elasticsearch index. This operator extends Airflow's BaseOperator class, allowing it to be used as a task within an Airflow Directed Acyclic Graph (DAG).
+
+  ![3](https://github.com/user-attachments/assets/e9411683-baab-4d49-993e-8444793e8617)
 
  
