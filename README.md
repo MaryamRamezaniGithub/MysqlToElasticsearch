@@ -46,7 +46,7 @@ This project sets up a comprehensive environment for orchestrating and monitorin
 1. Execute the following command to start all services defined in the docker-compose file:
    
    ```
-   docker-compose up -d
+   docker-compose -f airflow-elasticsearch-mariadb.yml up -d
    ```
    This command will build and start the Docker containers for various services in your project.
   #### Step 4: Monitor Service Initialization
