@@ -15,7 +15,7 @@ This project sets up a comprehensive environment for orchestrating and monitorin
 - PostgreSQL: Serves as the backend database for Airflow, storing metadata and task logs. It is configured with default credentials (airflow/airflow) and runs on port 5432.
 - Redis: Acts as the message broker for Celery, facilitating communication between the scheduler and workers, and runs on port 6379
 
-  ** 2- Elasticsearch & Kibana **
+**2- Elasticsearch & Kibana**
    is a powerful open-source search and analytics engine designed for fast and scalable full-text search and Kibana is designed to work seamlessly with Elasticsearch, allowing users to visualize, search, and analyze data stored in Elasticsearch indices. By creating and customize dashboards in Kibana to display multiple visualizations on a single screen. In this project,  Elasticsearch runs on port 9200, and Kibana on port 5601.
 
 
