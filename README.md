@@ -83,3 +83,15 @@ the method (__init__) accepts a connection ID (elasticsearch_conn_id) that defau
 the mysql_conn_id is set to "mysql_default", we should retrive  Airflow connection ID for the Mariadb database as the following
 
  ![6](https://github.com/user-attachments/assets/2ad6c3c5-7e23-454a-9244-314a64b32421)
+
+ #### Step 7: Monitor Airflow DAGs from Airflow Web Server
+
+ If every thing goes well you can see the following pipeline in Graph tab of your Airflow We Server
+
+ ![8](https://github.com/user-attachments/assets/312f0396-42fe-4683-8ec3-ab82d2aad87b)
+
+ To see the results in Elasticsearch, you should go to 'Kibana' with ip address 'http://localhost:5601' and write the following search query in console:
+
+ ![9](https://github.com/user-attachments/assets/5d483344-d995-416f-b0cb-4e108f8d9399)
+
+
