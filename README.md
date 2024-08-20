@@ -94,4 +94,6 @@ the mysql_conn_id is set to "mysql_default", we should retrive  Airflow connecti
 
  ![9](https://github.com/user-attachments/assets/5d483344-d995-416f-b0cb-4e108f8d9399)
 
+You can see the reults are successfully transfered into Elasticsearch. 
 
+Hope you Enjoy...
