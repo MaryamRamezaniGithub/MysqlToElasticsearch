@@ -86,7 +86,7 @@ the mysql_conn_id is set to "mysql_default", we should retrive  Airflow connecti
 
  #### Step 7: Monitor Airflow DAGs from Airflow Web Server
 
- If every thing goes well you can see the following pipeline in Graph tab of your Airflow We Server
+ If every thing goes well you can see the following pipeline in Graph tab of your Airflow Web Server
 
  ![8](https://github.com/user-attachments/assets/312f0396-42fe-4683-8ec3-ab82d2aad87b)
 
