@@ -5,7 +5,7 @@ This project defines an Apache Airflow Directed Acyclic Graph (DAG) designed to 
 This project sets up a comprehensive environment for orchestrating and monitoring data pipelines using Apache Airflow. It leverages Docker Compose to define and manage various services required for running Airflow in a distributed manner with CeleryExecutor, enabling scalable and reliable task execution.
 
 ## Technologies
-1. Apache Airflow
+1. ## Apache Airflow
  is an excellent open-source tool for orchestrating complex data pipelines. By defining Directed Acyclic Graphs (DAGs) that outline the sequence of tasks and their dependencies, I was able to automate data simulations and reliably execute tasks at scale. Leveraging Airflow's scheduling features, I efficiently managed data processing tasks, ensuring timely execution and seamless handling of dependencies across different components of the pipeline. The DAGs used in this project can be found in the "dags" directory.
 ### Key Components
 - Webserver: The Airflow web interface is exposed on port 8080, allowing users to manage and monitor DAGs (Directed Acyclic Graphs) and tasks.
